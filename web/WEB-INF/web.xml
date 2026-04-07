@@ -23,7 +23,7 @@
     </session-config>
     <welcome-file-list>
         <!-- this is for /Servlet/ so servlet is name of the project and is considered url-->
-        <welcome-file>login.html</welcome-file>
+        <welcome-file>login.jsp</welcome-file>
     </welcome-file-list>
     <!--    <welcome-file-list>
          this is for /Servlet/ so servlet is name of the project and is considered url

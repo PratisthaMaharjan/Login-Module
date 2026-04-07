@@ -39,6 +39,13 @@ public class Login extends HttpServlet {
             
             String username = request.getParameter("username");
             String password = request.getParameter("password");
+            
+            if(username == null || username.trim().isEmpty() || password == null || password.trim().isEmpty()) {
+//                response.getWriter().println("Fields cannot be empty!");
+                request.setAttribute("error", "Fields cannot be empty!");
+                request.getRequestDispatcher("login.jsp").forward(request, response);
+                return;
+            }
             String query = "Select * from users WHERE username='" + username + "' AND password = '" + password + "'";
             
             ResultSet rs = stm.executeQuery(query);
@@ -54,8 +61,10 @@ public class Login extends HttpServlet {
                     
                 } else {
 //                    response.sendRedirect("login.html");
-                    response.getWriter().println("<br>Login Failed! Check username or password.</br>");
-                    response.getWriter().println("<a href='index.jsp'>Try again</a>");
+//                    response.getWriter().println("<br>Login Failed! Check username or password.</br>");
+//                    response.getWriter().println("<a href='index.jsp'>Try again</a>");
+                    request.setAttribute("error", "Invalid username or password");
+                    request.getRequestDispatcher("login.jsp").forward(request, response);
                     System.out.println("Login Failed!");
                 }       
             con.close();

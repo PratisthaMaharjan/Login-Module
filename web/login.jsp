@@ -1,8 +1,11 @@
+<%-- 
+    Document   : login
+    Created on : 7 Apr 2026, 12:48:39
+    Author     : User
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
--->
 <html>
     <head>
         <title>Login</title>
@@ -15,5 +18,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
             Password: <input type="password" name="password">
             <input type="submit">
         </form>
+        <%
+            String error = (String) request.getAttribute("error");
+            if(error != null){
+        %>
+        <p style="color:red;"><%= error %></p>
+        <%
+            }
+        %>
     </body>
 </html>
