@@ -1,3 +1,5 @@
 nbproject
 build
 test
+LoginTestNG.java
+TestRunner.java
