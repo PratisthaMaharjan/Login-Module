@@ -122,7 +122,8 @@ Automated UI testing is implemented using Selenium WebDriver and TestNG.
 - Assertions for validation  
 - Automated browser interaction  
 - Test execution reports (`test-output/`)  
-
+Report is shown as:
+![Report Image](image.png)
 ---
 
 ## Project Structure (Simplified)
