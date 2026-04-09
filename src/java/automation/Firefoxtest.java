@@ -7,6 +7,8 @@ package automation;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
+// This is to test if driver opens firefox as it should.
+
 public class Firefoxtest {
 
     public static void main(String[] args) {

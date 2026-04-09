@@ -1,5 +1,6 @@
 nbproject
 build
 test
-LoginTestNG.java
-TestRunner.java
+test-output
+*.class
+*.log
