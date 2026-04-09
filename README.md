@@ -55,9 +55,9 @@ Default credentials:
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
-### 🔗 Required Libraries
+### Required Libraries
 
 - **MySQL Connector/J**  
   https://dev.mysql.com/downloads/connector/j/
